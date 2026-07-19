@@ -48,8 +48,11 @@ ShipBar collapses all of that into a single tap:
 
 ```bash
 npm install -g @vscode/vsce
-vsce package
+vsce package --no-dependencies
 ```
+
+*(`--no-dependencies` is required — ShipBar has no runtime dependencies, and
+`vsce`'s dependency-resolution step fails on projects without one.)*
 
 Then in Cursor: `Extensions` → `...` menu → **Install from VSIX...** and pick
 the generated `shipbar-0.0.1.vsix`.
@@ -57,8 +60,8 @@ the generated `shipbar-0.0.1.vsix`.
 ### From source (for development)
 
 ```bash
-git clone https://github.com/max-blackwell/shipbar.git
-cd shipbar
+git clone https://github.com/max-blackwell/ShipBar.git
+cd ShipBar
 ```
 
 Open the folder in Cursor and press `F5` to launch an Extension Development
