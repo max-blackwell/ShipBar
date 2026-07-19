@@ -1,5 +1,7 @@
-icons-download.sh
-.git/**
 .gitignore
+.vscodeignore
+icons-download.sh
 package-lock.json
-*.vsix 
+*.md
+!README.md
+.github/**
