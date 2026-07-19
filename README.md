@@ -13,12 +13,12 @@ you, you get instant, one-tap control right above your keyboard.
 
 | Icon | Button | Action | Command |
 |------|--------|--------|---------|
-| <img src="icons/zap-readme.png" width="20" height="20" alt="Zap" /> | **Zap** | Open the inline AI generate prompt (Cmd+K-style) at your cursor | `aipopup.action.modal.generate` |
-| <img src="icons/circle-check-readme.png" width="20" height="20" alt="Check" /> | **Check** | Accept all pending edits from the agent | `editor.action.inlineDiffs.acceptAll` |
-| <img src="icons/circle-x-readme.png" width="20" height="20" alt="Close" /> | **Close** | Reject all pending edits from the agent | `editor.action.inlineDiffs.rejectAll` |
-| <img src="icons/split-readme.png" width="20" height="20" alt="Branch" /> | **Branch** | Duplicate the current chat into a new thread | `composer.duplicateChat` |
-| <img src="icons/mic-readme.png" width="20" height="20" alt="Mic" /> | **Mic** | Toggle voice dictation on/off | `composer.toggleVoiceDictation` |
-| <img src="icons/sparkles-readme.png" width="20" height="20" alt="Chat" /> | **Chat** | Start a brand new chat | `aichat.newchataction` |
+| <img src="icons/zap.png" width="20" height="20" alt="Zap" /> | **Zap** | Open the inline AI generate prompt (Cmd+K-style) at your cursor | `aipopup.action.modal.generate` |
+| <img src="icons/circle-check.png" width="20" height="20" alt="Check" /> | **Check** | Accept all pending edits from the agent | `editor.action.inlineDiffs.acceptAll` |
+| <img src="icons/circle-x.png" width="20" height="20" alt="Close" /> | **Close** | Reject all pending edits from the agent | `editor.action.inlineDiffs.rejectAll` |
+| <img src="icons/split.png" width="20" height="20" alt="Branch" /> | **Branch** | Duplicate the current chat into a new thread | `composer.duplicateChat` |
+| <img src="icons/mic.png" width="20" height="20" alt="Mic" /> | **Mic** | Toggle voice dictation on/off | `composer.toggleVoiceDictation` |
+| <img src="icons/sparkles.png" width="20" height="20" alt="Chat" /> | **Chat** | Start a brand new chat | `aichat.newchataction` |
 
 ## Why use it
  
