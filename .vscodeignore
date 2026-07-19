@@ -1,0 +1,5 @@
+icons-download.sh
+.git/**
+.gitignore
+package-lock.json
+*.vsix 

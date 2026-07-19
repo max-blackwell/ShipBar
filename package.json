@@ -1,0 +1,83 @@
+{
+  "name": "shipbar",
+  "displayName": "ShipBar",
+  "description": "Cursor AI actions on your MacBook Touch Bar — generate, accept, reject, branch, chat, and voice dictation.",
+  "icon": "logo.png",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "shipbar.zap",
+        "title": "ShipBar: Zap",
+        "icon": "icons/zap.png"
+      },
+      {
+        "command": "shipbar.check",
+        "title": "ShipBar: Check",
+        "icon": "icons/circle-check.png"
+      },
+      {
+        "command": "shipbar.close",
+        "title": "ShipBar: Close",
+        "icon": "icons/circle-x.png"
+      },
+      {
+        "command": "shipbar.branch",
+        "title": "ShipBar: Branch",
+        "icon": "icons/split.png"
+      },
+      {
+        "command": "shipbar.mic",
+        "title": "ShipBar: Mic",
+        "icon": "icons/mic.png"
+      },
+      {
+        "command": "shipbar.chat",
+        "title": "ShipBar: Chat",
+        "icon": "icons/sparkles.png"
+      }
+    ],
+    "menus": {
+      "touchBar": [
+        {
+          "command": "shipbar.zap",
+          "group": "1_actions@1"
+        },
+        {
+          "command": "shipbar.check",
+          "group": "1_actions@2"
+        },
+        {
+          "command": "shipbar.close",
+          "group": "1_actions@3"
+        },
+        {
+          "command": "shipbar.branch",
+          "group": "1_actions@4"
+        },
+        {
+          "command": "shipbar.mic",
+          "group": "2_input@1"
+        },
+        {
+          "command": "shipbar.chat",
+          "group": "2_input@2"
+        }
+      ]
+    }
+  }
+}
