@@ -3,7 +3,7 @@
   "displayName": "ShipBar",
   "description": "Cursor AI actions on your MacBook Touch Bar — generate, accept, reject, branch, chat, and voice dictation.",
   "version": "0.0.1",
-  "publisher": "local",
+  "publisher": "max-blackwell",
   "license": "MIT",
   "repository": {
     "type": "git",
