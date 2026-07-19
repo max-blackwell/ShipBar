@@ -2,9 +2,26 @@
   "name": "shipbar",
   "displayName": "ShipBar",
   "description": "Cursor AI actions on your MacBook Touch Bar — generate, accept, reject, branch, chat, and voice dictation.",
-  "icon": "logo.png",
   "version": "0.0.1",
   "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/max-blackwell/ShipBar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/max-blackwell/ShipBar/issues"
+  },
+  "homepage": "https://github.com/max-blackwell/ShipBar#readme",
+  "icon": "logo.png",
+  "keywords": [
+    "cursor",
+    "touch bar",
+    "touchbar",
+    "macbook",
+    "ai",
+    "productivity"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },
