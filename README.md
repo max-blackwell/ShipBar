@@ -45,7 +45,7 @@ Touch Bar sitting idle on your MacBook
 ## Requirements
 
 - macOS with a physical Touch Bar
-- [Cursor](https://cursor.sh) (the commands above are Cursor-specific; they
+- [Cursor](https://cursor.com) (the commands above are Cursor-specific; they
 won't exist in vanilla VS Code)
 
 
