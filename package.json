@@ -4,6 +4,10 @@
   "description": "Cursor AI actions on your MacBook Touch Bar — generate, accept, reject, branch, chat, and voice dictation. Fully configurable.",
   "version": "0.1.0",
   "publisher": "max-blackwell",
+  "author": {
+    "name": "Max Blackwell",
+    "url": "https://x.com/_Max_Blackwell"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -39,8 +43,9 @@
     "commands": [
       {
         "command": "shipbar.configure",
-        "title": "ShipBar: Configure Buttons",
-        "category": "ShipBar"
+        "title": "Configure Buttons",
+        "category": "ShipBar",
+        "icon": "icons/settings.png"
       },
       {
         "command": "shipbar.slot1",
@@ -104,12 +109,22 @@
           "command": "shipbar.slot6",
           "group": "2_input@2",
           "when": "config.shipbar.buttons.slot6.enabled"
+        },
+        {
+          "command": "shipbar.configure",
+          "group": "3_settings@1",
+          "when": "config.shipbar.showConfigButton"
         }
       ]
     },
     "configuration": {
       "title": "ShipBar",
       "properties": {
+        "shipbar.showConfigButton": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show a 7th Touch Bar button (⚙) that opens the ShipBar configuration panel."
+        },
         "shipbar.buttons": {
           "type": "object",
           "description": "Configure each Touch Bar slot: which command it runs and whether it's shown. Icons stay fixed per slot (Touch Bar icons can't be swapped live), but the command each slot fires — and whether it appears at all — is fully user-defined.",

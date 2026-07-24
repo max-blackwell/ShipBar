@@ -8,9 +8,11 @@ All notable changes to ShipBar are documented here.
 - **Configurable buttons** — every Touch Bar slot can now be remapped to any
   Cursor or VS Code command via the `shipbar.buttons` setting, and any slot
   can be hidden independently. Changes apply live, no reload required.
-- **"ShipBar: Configure Buttons" command** — guided QuickPick flow to change,
-  hide, or reset any slot without hand-editing settings.json. Preset list of
-  common commands, plus a custom-command-ID option for anything else.
+- **Configuration panel** — a 7th Touch Bar button (gear icon) opens a
+  single-page webview where every slot can be toggled and remapped with
+  dropdowns/preset commands, no settings.json editing required. Also
+  reachable via `Cmd+Shift+P` → "ShipBar: Configure Buttons". Toggle the
+  button itself off with `shipbar.showConfigButton: false`.
 - Example configuration file at `examples/settings.example.jsonc` covering
   every slot, including a remap and a disable example.
 

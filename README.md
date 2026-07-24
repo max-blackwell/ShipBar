@@ -1,13 +1,14 @@
 # ⚡ ShipBar
 
+[![Follow on X](https://img.shields.io/badge/Follow-@_Max__Blackwell-black?logo=x)](https://x.com/_Max_Blackwell)
+
 **Tactile control for your Cursor AI agent, right on your MacBook's Touch Bar.**
 
 ## What it is
  
 ShipBar is a Cursor extension that turns your MacBook's Touch Bar into a
-6-button command strip for Cursor's AI coding agent. Instead of reaching for
-the mouse or hunting through menus every time the agent needs a decision from
-you, you get instant, one-tap control right above your keyboard.
+command strip for Cursor's AI coding agent: 6 configurable action buttons
+plus a settings button, right above your keyboard.
 
 ## Features
 
@@ -24,9 +25,13 @@ you, you get instant, one-tap control right above your keyboard.
 
 Every button is remappable, and any button can be hidden.
 
-**Easiest way:** `Cmd+Shift+P` → **"ShipBar: Configure Buttons"**. Pick a
-slot, then choose to change its command (from a preset list or a custom
-command ID), hide it, or reset it to default. No file editing required.
+**Easiest way — Touch Bar:** tap the gear button (7th slot, on by default)
+to open the ShipBar configuration panel right in Cursor. Toggle any button
+on or off, pick a new command from the preset list or enter a custom
+command ID, then hit **Save**. No file editing required.
+
+You can also open the same panel via `Cmd+Shift+P` → **"ShipBar: Configure
+Buttons"**, or hide the gear button itself with `"shipbar.showConfigButton": false`.
 
 **Manual way:** add a `shipbar.buttons` block to your settings.json
 (`Cmd+Shift+P` → **Preferences: Open User Settings (JSON)**):
@@ -107,7 +112,9 @@ Host with ShipBar loaded.
 
 ## Regenerating icons
 
-Icons are sourced from [Lucide](https://lucide.dev) and rendered to PNG:
+Icons are sourced from [Lucide](https://lucide.dev) and rendered to PNG.
+This includes the six action icons plus the settings (gear) icon used by
+the config panel button:
 
 ```bash
 brew install librsvg   # provides rsvg-convert
