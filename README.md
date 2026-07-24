@@ -20,6 +20,39 @@ you, you get instant, one-tap control right above your keyboard.
 | <img src="icons/mic.png" width="20" height="20" alt="Mic" /> | **Mic** | Toggle voice dictation on/off | `composer.toggleVoiceDictation` |
 | <img src="icons/sparkles.png" width="20" height="20" alt="Chat" /> | **Chat** | Start a brand new chat | `aichat.newchataction` |
 
+## Configuration
+
+Every button is remappable, and any button can be hidden. Add a
+`shipbar.buttons` block to your settings.json (`Cmd+Shift+P` →
+**Preferences: Open User Settings (JSON)**):
+
+```jsonc
+{
+  "shipbar.buttons": {
+    "slot4": {
+      "enabled": true,
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    "slot5": {
+      "enabled": false
+    }
+  }
+}
+```
+
+- `command` — any Cursor or VS Code command ID. Changes apply immediately,
+  no reload required.
+- `enabled` — `false` removes the button from the Touch Bar entirely.
+- Only override the slots you want to change; unspecified slots keep their
+  defaults.
+
+Slot-to-icon mapping is fixed (slot1 = Zap icon, slot2 = Check icon, and so
+on) — icons can't be swapped live from settings, only the command each slot
+runs and whether it's shown.
+
+See [`examples/settings.example.jsonc`](examples/settings.example.jsonc) for
+a fully annotated example covering every slot.
+
 ## Why use it
  
 Working with an AI coding agent means making the same few decisions over and
@@ -55,7 +88,7 @@ vsce package --no-dependencies
 `vsce`'s dependency-resolution step fails on projects without one.)*
 
 Then in Cursor: `Extensions` → `...` menu → **Install from VSIX...** and pick
-the generated `shipbar-0.0.1.vsix`.
+the generated `shipbar-0.1.0.vsix`.
 
 ### From source (for development)
 
