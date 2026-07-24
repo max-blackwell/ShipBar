@@ -38,6 +38,11 @@
   "contributes": {
     "commands": [
       {
+        "command": "shipbar.configure",
+        "title": "ShipBar: Configure Buttons",
+        "category": "ShipBar"
+      },
+      {
         "command": "shipbar.slot1",
         "title": "ShipBar: Slot 1 (default: Zap)",
         "icon": "icons/zap.png"

@@ -22,9 +22,14 @@ you, you get instant, one-tap control right above your keyboard.
 
 ## Configuration
 
-Every button is remappable, and any button can be hidden. Add a
-`shipbar.buttons` block to your settings.json (`Cmd+Shift+P` →
-**Preferences: Open User Settings (JSON)**):
+Every button is remappable, and any button can be hidden.
+
+**Easiest way:** `Cmd+Shift+P` → **"ShipBar: Configure Buttons"**. Pick a
+slot, then choose to change its command (from a preset list or a custom
+command ID), hide it, or reset it to default. No file editing required.
+
+**Manual way:** add a `shipbar.buttons` block to your settings.json
+(`Cmd+Shift+P` → **Preferences: Open User Settings (JSON)**):
 
 ```jsonc
 {
